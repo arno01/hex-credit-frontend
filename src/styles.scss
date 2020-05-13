@@ -1,1 +1,96 @@
+@import '~@angular/material/theming';
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
 /* You can add global styles to this file, and also import other style files */
+html, body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #45b9ff 0%,#8b41fd 100%);
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.text-center {
+  text-align: center;
+}
+.clearfix {
+  &:after, &:before {
+    content: '';
+    display: table;
+    width: 100%;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+
+.mat-dialog-container {
+  background: #8745fc;
+  background: -moz-linear-gradient(-45deg,  #8745fc 0%, #676dff 100%);
+  background: -webkit-linear-gradient(-45deg,  #8745fc 0%,#676dff 100%);
+  background: linear-gradient(135deg,  #8745fc 0%,#676dff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8745fc', endColorstr='#676dff',GradientType=1 );
+  border-radius: 3px;
+  color: #fff;
+}
+.dialog-block_title {
+  font-weight: bold;
+  font-size: 26px;
+  margin-bottom: 0.5em;
+}
+.dialog-block_content_item {
+  padding: 20px;
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.dialog-block_content_item + .dialog-block_content_item {
+  margin-top: 15px;
+}
+.modal-item_table {
+  width: 100%;
+  border: 0 none;
+  font-weight: bold;
+  line-height: 32px;
+  td {
+    padding: 5px 0;
+  }
+}
+.mat-dialog-container {
+  position: relative;
+}
+.dialog-close {
+  position: absolute;
+  right: 6px;
+  top: 2px;
+  width: 19px;
+  height: 24px;
+  cursor: pointer;
+  &:after, &:before {
+    height: 2px;
+    background-color: #fff;
+    position: relative;
+    content: '';
+    display: block;
+  }
+  &:after {
+    top: 11px;
+    transform: rotate(45deg);
+  }
+  &:before {
+    top: 13px;
+    transform: rotate(-45deg);
+  }
+}
